@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title></title>
+ <style>
+  input {
+   width: 70vw;
+   height: 6vh;
+  }
+ </style>
+</head>
+
+<body>
+ <input type="text" for="name" id="myinput" onclick="myFunction()" placeholder="Test">
+ <input type="text" name="last-name" id="ls" onclick="myFunction2()" placeholder="test2" />
+ <script>
+  {
+   let status = "connected js";
+   console.log(status);
+  }
+ 
+   function myFunction() {
+   i = 1;
+    console.log(i)
+   }
+    function myFunction2() {
+    i = 2;
+     console.log(i)
+   }
+   document.addEventListener('keydown', (event) => {
+    if(event.code === "ArrowDown"){
+     console.log('down')
+    }
+    
+   })
+ </script>
+</body>
+
+</html>
